@@ -1,0 +1,557 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ############################################## */
+
+    .countdown {
+        font: normal 12px/20px Arial, Helvetica, sans-serif;
+        word-wrap: break-word;
+        box-shadow: 0 1px 1px 0 rgba(1, 1, 1, 0.4);
+        width: 250px;
+        height: 65px;
+        text-align: center;
+        background: #f1f1f1;
+        border-radius: 5px;
+        margin: 0 auto;
+        font-weight: lighter;
+    }
+    .countdown .label {
+        font-size: 12px;
+        color: #65584c;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 2px;
+        padding: 5px 0;
+    }
+    .countdown .time {
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        text-shadow: 1px 1px 0px #ccc;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        display: block;
+        background: #e5554e;
+        box-shadow: 0 1px 2px 0 rgba(1, 1, 1, 0.4);
+    }
+
+/* ############################################## */
+
+.light{
+    background-color: #0F1923;
+}
+
+.dark{
+    background-color: #11171D;
+}
+
+.text-color{
+    color: #F12C4C;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#hidden{
+    display: none;
+}
+
+#hidden2{
+    display: none;
+}
+
+@media only screen and (min-width: 900px){
+    
+    h1{
+        font-size: 30px;
+    }
+    
+    p{
+        font-size: 18px;
+        line-height: 25px;
+    }  
+
+   
+    .button{
+        display: inline-block;
+        width: fit-content;
+        background-color: #F12C4C;
+        border: 1px solid #F12C4C;
+        color: white;
+        padding: 20px 45px 20px 45px;
+        font-size: 20px;
+        border-radius: 50px;
+        animation-duration: 0.7s;
+        animation-name: pulse;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes pulse {
+        to {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+
+    @keyframes pulse {
+        to {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+
+    .container-coutdown{
+        display: inline-block;
+         position: fixed; 
+         text-align: center;
+          width: 100%;
+    }
+       
+    
+    .disclaimer{
+        background-color: #F12C4C;
+        text-align: center;
+        color: white;
+        padding: 10px 0px;
+        position: fixed;
+        width: 100%;
+    }
+    
+    .main-container{
+        padding: 15px 250px 15px 250px;
+        color: white;
+        text-align: center;
+    }
+    
+    .image-main{
+        text-align: center;
+    }
+    
+    .image-main img{
+        width: 200px;
+    }
+    
+    .main-container h1{
+        font-size: 40px;
+    }
+
+    .main-container h3{
+        font-size: 15px;
+    }
+
+    .video{
+        border: 1px solid white;
+        border-radius: 3px;
+    }
+    
+    .offer-main{
+        padding: 20px 0px;
+    }
+    
+    .offer-main h3{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    .details-container{
+        text-align: center;
+        color: white;
+        padding: 50px 0px;
+    
+    }
+    
+    .title-details{
+        padding: 0px 250px 50px 250px;
+    }
+    
+    .image-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 50px;
+    }
+    
+    .image-about{
+        text-align: center;
+    }
+    
+    .image-about img{
+        width: 450px;
+    }
+    
+    .text-about{
+        text-align: justify;
+        margin: auto 0;
+    }
+    
+    .function-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+        padding: 50px;
+    }
+    
+    .text-function{
+        text-align: justify;
+        margin: auto 0;
+    }
+    
+    .benefits-container{
+        padding: 50px 0px;
+        color: white;
+        text-align: center;
+    }
+    
+    .grid-benefits{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 25px 25px;
+        gap: 20px;
+    }
+    
+    .card-benefits{
+        background-color: #232C35;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .img-card{
+        padding-bottom: 20px;
+    }
+    
+    .card-benefits h3{
+        color: #F12C4C;
+        font-size: 20px;
+    }
+    
+    .card-benefits p{
+        font-size: 16px;
+    }
+    
+    .offer-container{
+        padding: 50px 0px;
+        text-align: center;
+        color: white;
+    }
+    
+    .questions-container{
+        padding: 50px 0px;
+        text-align: center;
+        color: white;
+    }
+    
+    .questions{
+        padding: 0px 250px;
+    }
+    
+    .garantia-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        color: white;
+        padding: 50px;
+    }
+    
+    .text-garantia{
+        margin: auto 0;
+    }
+    
+    .image-garantia img{
+        width: 320px;
+    }
+    
+    .footer-container{
+        display: grid;
+        color: white;
+        text-align: center;
+        padding: 150px 250px;
+    
+    }
+    
+    .image-footer{
+        text-align: center;
+    }
+    
+    .image-footer img{
+        width: 200px;
+    }
+    
+    .contact-footer{
+        margin: auto 0;
+    }
+    
+    #btn-contato{
+        background-color: #619BCE;
+        border: 1px solid #619BCE;
+        font-size: 18px;
+    }
+    
+    .disclaimer-footer p{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 899px){
+     *{
+         max-width: 100%;
+         color: white;
+     } 
+
+     h1{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    
+    p{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .button{
+        display: inline-block;
+        width: fit-content;
+        margin: 0px 20px;
+        background-color: #F12C4C;
+        border: 1px solid #F12C4C;
+        color: white;
+        padding: 20px 45px 20px 45px;
+        font-size: 20px;
+        border-radius: 50px;
+        animation-duration: 0.7s;
+        animation-name: pulse;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes pulse {
+        to {
+            -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+        }
+    }
+
+    @keyframes pulse {
+        to {
+            -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+        }
+    }
+
+    .container-coutdown{
+        display: inline-block;
+         position: fixed; 
+         text-align: end;
+          width: 100%;
+    }
+    
+    .disclaimer{
+        background-color: #F12C4C;
+        text-align: center;
+        color: white;
+        padding: 5px 0px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .main-container{
+        text-align: center;
+        padding-top: 15px;
+    }
+    
+    .image-main{
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .image-main img{
+        width: 150px;
+    }
+    
+    .main-container h1{
+        font-size: 25px;
+    }
+
+    .video{
+        border: 1px solid white;
+        margin: 0px 2px;
+        border-radius: 3px;
+    }
+   
+    .offer-main{
+        padding: 5px 0px;
+    }
+    
+    .offer-main h3{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    
+    .details-container{
+        text-align: center;  
+        padding: 50px 0px;  
+    }
+
+    .image-details{
+        padding-top: 15px;
+    }
+    
+    .about-container{
+        padding: 50px 0px;
+    }
+    
+    .image-about{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .image-about img{
+        width: 300px;
+    }
+
+    .image-about img{
+        text-align: center;
+    }
+    
+   
+    .text-about{
+        text-align: center;
+        margin: auto 0;
+    }
+
+/* ################################################### */
+    
+    .function-container{
+        padding: 50px 0px;
+    }
+    
+    .text-function{
+        text-align: center;
+    }
+
+    .img-function{
+        text-align: center;
+    }
+
+    .img-function img{
+        width: 200px;
+    }
+
+/* ################################################### */
+    
+    .benefits-container{
+        padding: 50px 0px;
+        text-align: center;
+    }
+    
+    .grid-benefits{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 25px 25px;
+        gap: 20px;
+    }
+    
+    .card-benefits{
+        background-color: #232C35;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .img-card{
+        padding-bottom: 20px;
+    }
+    
+    .card-benefits h3{
+        color: #F12C4C;
+        font-size: 20px;
+    }
+    
+    .card-benefits p{
+        font-size: 16px;
+    }
+
+/* ################################################### */
+    
+    .offer-container{
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+/* ################################################### */
+    
+    .questions-container{
+        padding: 50px 0px;
+        text-align: center;
+        color: white;
+    }
+    
+    .questions{
+        padding: 10px;
+    }
+
+/* ################################################### */
+    
+    .garantia-container{
+        text-align: center;
+        padding: 50px 0px;
+    }
+    
+    .image-garantia img{
+        width: 280px;
+    }
+    
+    .footer-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        color: white;
+        text-align: center;
+        padding: 150px 15px;
+    
+    }
+    
+    .image-footer{
+        text-align: center;
+    }
+    
+    .image-footer img{
+        width: 180px;
+    }
+    
+    .contact-footer{
+        margin: auto 0;
+    }
+    
+    #btn-contato{
+        background-color: #619BCE;
+        border: 1px solid #619BCE;
+        font-size: 18px;
+    }
+    
+    .disclaimer-footer p{
+        font-size: 12px;
+    }
+
+
+    
+
+}
+
+
+

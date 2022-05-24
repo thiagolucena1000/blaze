@@ -1,0 +1,44 @@
+details {
+    display: block; 
+    width: auto;
+    margin: 10px 0;
+  }
+  
+  details p { 
+    padding: 15px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+  }
+  
+  summary {
+    display: flex; 
+    background-color: #0F1923;
+    color: #F12C4C;
+    border: 1px solid #F12C4C;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-weight: 700;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  summary::-webkit-details-marker {
+     display: none;
+  }
+  
+  summary:before {
+     content: "+";
+     font-size: 20px;
+     font-weight: bold;
+     margin: 0 5px;
+     padding: 0;
+     width: 20px;
+     text-align: center;
+  }
+  
+  details[open] summary:before {
+    content: "-";
+  }

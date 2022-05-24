@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head><meta charset="utf-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/landing.css">
+    <link rel="stylesheet" href="../assets/accordion.css">
+    <title>Imperador da Blaze</title>
+    <script>
+        (function(b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function() {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },
+                hasChanged: function() {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "../oficial"; //LINK PARA REDIRECIONAR AQUI
+                    }
+                },
+                checkCompat: function() {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+                configure: function() {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "../oficial"; //LINK PARA REDIRECIONAR AQUI
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function() {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>
+
+</head>
+<body>
+    <!-- <div class="disclaimer">
+        <h3>APENAS 100 VAGAS DISPONÍVEIS!</h3>
+    </div> -->
+
+    <!-- <div class="container-coutdown" id="hidden2">
+        <div class="countdown">
+            <div class="label">Esse video sairá do ar em:</div>
+            <div class='time'>00:00</div>
+        </div>
+    </div> -->
+    
+
+    <div class="main-container light" id="topo">
+        <!-- <div class="image-main">
+            <img src="../img/logo.png" alt="logo">
+        </div> -->
+            <h1>Você só precisa clicar em 1 BOTÃO <span class="text-color">PARA GANHAR R$200 TODOS OS DIAS!</span>
+            </h1>
+            <br>
+            <h3>Brecha descoberta no maior sistema do mundo permite que pessoas comuns ganhe dinheiro todos os dias
+            </h3>
+            <br>
+            <div class="video">
+                <script type="text/javascript" id="scr_6264afd13c4c77000af315c5">var s=document.createElement("script");s.src="https://scripts.converteai.net/95136a21-b1bd-4c41-9f56-a540535e4061/players/6264afd13c4c77000af315c5/player.js",s.async=!0,document.head.appendChild(s);</script>
+            </div>
+            <br>
+            <h3>Assista o video para liberar o sistema</h3>
+        <!-- <div class="offer-main">
+            <h3>De <s>R$1.397,00</s></h3>
+            <h1><span class="text-color">12x de R$19,00</span></h1>         
+        </div> -->
+
+        <!-- <div class="button">
+            <a href="#offer">ADQUIRIR MEU ACESSO AGORA!</a>
+        </div>
+        <br><br>
+        PAGAMENTO ÚNICO!<br>
+        (SEM MENSALIDADE)  -->
+    </div>
+
+    <div class="hidden" id="hidden">
+        <div class="details-container dark">
+
+            <div class="title-details">
+                <h1>O que eu vou levar?</h1>
+                <br>
+                <h3>Você compra 1 produto e GANHA 2 salas de sinais dos jogos disponíveis na BLAZE.
+                    Com o Robô Imperador da Blaze a assertividade é de 98% e o lucro é garantido.
+                </h3>
+            </div>
+                
+    
+            <div class="image-details">
+                <div class="double-details">
+                    <h1>DOUBLE</h1>
+                    
+                    <div class="image-double">
+                        <img src="../img/double.gif" alt="double">
+                    </div>
+                </div>
+    
+                <div class="crash-details">
+                    <h1>CRASH</h1>
+                    
+                    <div class="image-crash">
+                        <img src="../img/crash.gif" alt="crash">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="about-container light">
+            <div class="image-about">
+                <img widht="10" src="../img/funciona.png" alt="sobre">
+            </div>
+    
+            <div class="text-about">
+                <h1>SOBRE O ROBÔ Imperador?</h1>
+                <br>
+                <h3>Somos o único robô que usa inteligência artificial
+                    para encontrar padrões de entradas na plataforma Blaze.
+                </h3>
+                <br>
+                <p>Criamos recursos intuitivos, que vão desde gráficos para análise e automações
+                que fazem cálculos complexos,
+                tudo isso em tempo real para não perder uma oportunidade sequer.
+                </p> 
+                <br>
+                <br>
+                <div class="button">
+                    <a href="#offer">ADQUIRIR MEU ACESSO AGORA!</a>
+                </div>    
+            </div>
+        </div>
+    
+        <div class="function-container dark">
+            <div class="text-function">
+                <h1>COMO FUNCIONA O NOSSO ROBÔ?</h1>
+                <br>
+                <p>O nosso robô fica ligado 24 horas por dia, colhendo informações da blaze,
+                 mais por segurança o nosso robô só entrega essas informações quando ele encontra
+                 o melhor momento para que você sempre saia lucrando.
+                </p>
+                <br>
+                 <p>Você não vai precisar fazer nenhuma analise na Blaze,
+                 apenas vai fazer o que o nosso robô mandar e aguardar o resultado.
+                </p>
+                <br>
+                <h3>NOSSA ASSERTIVIDADE É DE 98% NO CRASH E NO DOUBLE!</h3>
+            </div>
+    
+            <div class="img-function">
+                <img src="../img/function.gif" alt="funções">
+            </div>
+        </div>
+    
+        <div class="benefits-container light">
+            <h1>VANTAGENS DO ROBÔ Imperador?</h1>
+            
+            <div class="grid-benefits">
+                <div class="card-benefits">
+                    <div class="img-card">
+                        <img src="../img/card1.png" alt="card1">
+                    </div>
+    
+                    <h3>Acesso Completo ao Robô!</h3>
+                    <p>Acesso completo ao robô Imperador.</p>
+                </div>
+    
+                <div class="card-benefits">
+                    <div class="img-card">
+                        <img src="../img/card2.png" alt="card1">
+                    </div>
+    
+                    <h3>Gerenciamento de Banca!</h3>
+                    <p>Planilha automatizada de gerenciamento de banca.</p>
+                </div>
+    
+                <div class="card-benefits">
+                    <div class="img-card">
+                        <img src="../img/card3.png" alt="card1">
+                    </div>
+    
+                    <h3>Suporte Exclusivo 24 horas!</h3>
+                    <p>Obtenha um suporte único e exclusivo 24 horas por dia!</p>
+                </div>
+    
+                <div class="card-benefits">
+                    <div class="img-card">
+                        <img src="../img/card4.png" alt="card1">
+                    </div>
+    
+                    <h3>Estratégias Secretas da Blaze!</h3>
+                    <p>Tenha acesso as estratégias que a Blaze esconde de você.</p>
+                </div>
+            </div>
+                
+        </div>
+    
+        <div class="offer-container dark" id="offer">
+            <img src="../img/mockup.png" alt="mockup">
+            <h1>ADQUIRA COM O VALOR PROMOCIONAL</h1>
+            <br>
+            <h3>Adquira acesso ao Robô Imperador antes que o tempo da promoção termine.</h3>           
+                
+            <div class="offer-main">
+                <h3>De <s>R$1.397,00</s></h3>
+                <br>
+                <h1><span class="text-color">12x de R$19,00</span></h1>
+                PAGAMENTO ÚNICO!<br>
+                (SEM MENSALIDADE)          
+            </div>
+            <br>
+            <div style=" display: inline-block;
+            width: fit-content;
+            background-color: #F12C4C;
+            border: 1px solid #F12C4C;
+            color: white;
+            padding: 20px 45px 20px 45px;
+            font-size: 20px;
+            border-radius: 50px;
+            animation-duration: 0.7s;
+            animation-name: pulse;
+            animation-iteration-count: infinite;">
+                <a href="https://checkout.mycheckout.com.br/checkout/62684c919a6c270aaa0e99c5">ADQUIRIR ACESSO VIA CARTÃO!</a>
+            </div>
+            <br><br>
+           
+             
+    
+            <div style=" display: inline-block;
+            width: fit-content;
+            background-color: #30B6A8;
+            border: 1px solid #30B6A8;
+            color: white;
+            margin-top: 15px;
+            padding: 20px 45px 20px 45px;
+            font-size: 20px;
+            border-radius: 50px;">
+                <a href="https://ev.braip.com/checkout/plavvpmj/chejvn17">ADQUIRIR ACESSO VIA PIX!</a>
+            </div> 
+        </div>
+    
+        <div class="questions-container light">
+            <div class="questions">
+                <h1>Perguntas Frequentes</h1>
+                <br>
+                <details>
+                    <summary>Quais são as formas de pagamento?</summary> 
+                    <p>O Robô Imperador da Blaze pode ser comprado através de PIX, débito e cartão de crédito. 
+                    </p>
+                </details>
+                
+                <details>
+                    <summary>Por quanto tempo vou ter acesso ao robô?</summary>  
+                    <p>O acesso ao Robô Imperador da Blaze é vitalício, dentro desse período,
+                     você terá acesso a todos os benefícios. </p>
+                </details> 
+    
+                <details>
+                    <summary>A plataforma de membros é segura?</summary> 
+                    <p>Sim. O nosso produto está hospedado na plataforma Hotmart,
+                     uma das maiores plataformas de infoprodutos do Brasil. </p>
+                </details> 
+    
+                <details>
+                    <summary>Sou iniciante no mercado. Esse produto é pra mim?</summary>                  
+                    <p>Sim! Com o nosso Robô você não precisara se preocupar em analisar graficos
+                     ou identificar padrões na Blaze, você apenas vai fazer o que o nosso Robô mandar
+                     e ganhar muito dinheiro. 
+                    </p>
+                </details> 
+    
+                <details>
+                    <summary>Em quanto tempo tenho resultados com o Robô?</summary> 
+                    <p>A partir do momento que você receber o acesso a o nosso Robô e começar a fazer
+                     o que ele mandar, os resultados apareceram de forma imediata. 
+                    </p>
+                </details> 
+    
+                <details>
+                    <summary>Como vou receber acesso ao produto?</summary> 
+                    <p>Mediante aprovação do pagamento, você será redirecionado para uma página
+                     aonde você terá acesso ao nosso suporte que dará a você o seu acesso ao nosso robô. 
+                    </p>
+                </details>   
+            </div>
+        </div>
+    
+        <div class="garantia-container dark">
+            <div class="text-garantia">
+                <h3>Se em até 07 dias após a compra, você não obter ganhos ou estiver
+                 insatisfeito por algum outro motivo, basta pedir o seu dinheiro de volta 
+                 com poucos cliques em poucos minutos.
+                 </h3>
+            </div>
+    
+            <div class="image-garantia">
+                <img src="../img/garantia.png" alt="garantia">
+            </div>
+        </div>
+    </div>  
+    
+    <div class="footer-container light">
+        <!-- <div class="image-footer">
+            <img src="../img/logo.png" alt="logo">
+            <p>O maior e mais poderoso robô para lucrar muito na plataforma Blaze.</p>
+        </div> -->
+
+        <!-- <div class="contact-footer">
+            <h3>Precisa de Ajuda?</h3>
+            <p>Entre em contato com o nosso suporte!</p>
+            <br>
+            <div class="button" id="btn-contato">
+                <a href="#topo">Fale Conosco</a>
+            </div> 
+        </div> -->
+
+        <div class="disclaimer-footer">
+            <p>Esse site não pertence ao Meta/Facebook. Em conformidade com a Lei Geral de Proteção 
+            de Dados, prezamos pela segurança e experiência do usuário. Em hipótese alguma fazemos 
+            qualquer tipo de spam.
+            </p>
+            <p>As informações contidas nesse site são meramente informativas e não tem, 
+            em hipótese alguma, a pretensão de induzir ninguém a nenhuma prática que seja prejudicial a 
+            si próprio.
+            </p>
+        </div>
+    </div>
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script> -->
+
+    <!-- <script>
+        window.onload = function () {
+            smartplayer.instances[0].on("loadeddata", ()=> {
+                const buttonLinks = document.querySelectorAll('.smartplayer-call-action--link');
+                const queryString = window.location.search;
+       
+            buttonLinks.forEach((buttonLink) => {
+                buttonLink.href += queryString;
+             })
+             })
+        }
+    </script> -->
+
+<script>
+    window.onload = function () {
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, n = links.length; i < n; i++) {
+            var href = links[i].href.trim() +
+                    (links[i].href.indexOf("?") > 0 ? '&' : '?') +
+                    document.location.search.replace('?', '').toString();
+            links[i].href = href;
+        }
+    }
+</script>
+
+    <script>
+        setTimeout(function(){
+            document.getElementById("hidden").style.display = "block";
+
+    //         document.getElementById("hidden2").style.display = "block";
+
+    //         $(document).ready(function onDocumentReady() {
+    //     var URL_FINAL = '#';
+    //     var nome = ['Maurício Souza', 'Bruna Silva', 'Luis Felipe', 'Daniel Campos', 'Adriano Santos', 'Fabiano Rogério', ':Moisés Silva', 'Vinicius Pimentel', 'José Silva', 'Diego Carvalho', 'Adriel Mendes', 'Nailton da Conceição'];
+    //     nome.sort(() => Math.random() - 0.5);
+    //     var i = 0, qtd = nome.length;
+    //     setInterval(function doThis() {
+    //         if (i == 11) return; // somente 11 eventos serão disparados
+    //         if (i == 1 || i == 8 || i == 10) {
+    //             toastr.info('<a href="' + URL_FINAL + '">Clique e Reserve sua vaga também!</a> ' + (qtd + (i * 3)) + ' pessoas compraram nos últimos 30min.', {
+    //                 timeOut: 5000,
+    //                 positionClass: "toast-bottom-right",
+    //             });
+    //         }
+    //         toastr.success('<a href="' + URL_FINAL + '">Clique e Reserve sua vaga também!</a> ' + nome[i++] + ' acabou de reservar a vaga dele.', {
+    //             timeOut: 5000,
+    //             positionClass: "toast-bottom-right",
+    //         })
+    //     }, 10 * 1000);   // a cada 5 segundos
+    // });
+        }, 520 * 1000);   // a partir de 520 segundos
+    </script>
+
+<!-- <script>
+    var MINUTOS = 10;
+    // Não altere nada abaixo dessa linha
+    function startTimer(duration, display) {
+        var timer = duration,
+                minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.forEach(function (el) {
+                el.textContent = minutes + ":" + seconds;
+            })
+            if (--timer < 0) {
+                timer = 0;
+            }
+        }, 1000);
+    }
+    window.onload = function () {
+        var minutesToSeconds = MINUTOS * 60,
+                display = document.querySelectorAll('.time');
+        startTimer(minutesToSeconds, display);
+    };
+</script> -->
+
+<script>
+    (function(w,d,s,t){
+        if(w._brpBstr)return;w._brpBstr=t;var f=d.getElementsByTagName(s)[0],j=d.createElement(s);
+        j.async=true;j.src="https://ev.braip.com/js/braip-booster.js?v="+t;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script',Date.now());
+    </script>
+</body>
+</html>
